@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="{{STATIC_URL}}css/bootstrap.css">
+        <link rel="stylesheet" href="{{STATIC_URL}}css/style.css">
+        <script src="{{STATIC_URL}}js/jquery.js"></script>
+        
+        
+        <script src="{{STATIC_URL}}js/bootstrap.js"></script>
+        
+        <title>{% block title %}ló ..::{% endblock%}</title
+        
+    </head>
+    
+    <body>
+        
+        {% block pageheader %}
+            
+               <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/index">ló..::</a>
+                    
+                    
+                    
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+                </div>
+           
+       
+        <div class="navbar-collapse collapse" >
+            <ul class="nav navbar-nav">
+                <li>
+                <a href="/index">Home</a>
+                </li>
+                <li>
+                <a href="categories.html">Category</a>
+                </li>
+                <li>
+                <a href="archive.html">Archives</a>
+                </li>
+            </ul>
+           
+            
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="contact.html">
+                            <span class="fa fa-sign-in"></span>
+                           Contact
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            <span class="fa fa-plus-circle"></span>
+                            About
+                        </a>
+                    </li>
+                <li>
+                        <a href="signin.html">
+                            <span class="fa fa-plus-circle"></span>
+                            Sign in
+                        </a>
+                    </li>
+            </ul>
+
+         
+        <form class="navbar-form pull-right" role="search">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
+        </div>
+        </form>
+    
+            
+                     
+            
+        </div>
+        </div>     
+    </div>
+            
+            {% endblock %}
+        
+        {% block content %}
+            
+        {% endblock %}
+        
+        
+        
+        {% block footer%}
+            
+            <div class="footer ">
+                <div class="container">
+                    <div class="row">
+                     <div class="col-sm-4">
+                        </div>
+                        <div class="col-sm-3">
+                <p>
+                    <a href="/index">
+                        <strong>
+                            <span class="fa fa-fw fa-home"></span>
+                            Home Page
+                        </strong>
+                    </a>
+                </p>
+                
+                <p>Lohinlo..::</p>
+                <p class="text-muted">
+                    Copyright &copy; 2014 -
+                    <a href="/index.html">Maur</a>
+                </p>
+            </div>
+            </div>
+        </div>
+        </div>
+            {% endblock %}
+        
+        
+    </body>
+        

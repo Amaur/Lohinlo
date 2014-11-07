@@ -1,0 +1,20 @@
+.list-art{
+    margin: 15px 0px 0px 65px;
+    box-shadow: 0 0 2px #504d4d;
+    border-radius: 20px;
+    background: #c6c5c5;
+}
+
+h4.truncate{
+margin-top: 10px;
+}
+
+.footer{
+    position: relative
+    margin-bottom: -10;
+}
+
+.article{
+    margin-left: 180px;   
+}
+
