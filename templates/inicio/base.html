@@ -3,14 +3,18 @@
     <head>
         <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
         <meta charset="utf-8">
+            
         <link rel="stylesheet" href="{{STATIC_URL}}css/bootstrap.css">
         <link rel="stylesheet" href="{{STATIC_URL}}css/style.css">
+            {% block css %}
+        
+            {% endblock %}
         <script src="{{STATIC_URL}}js/jquery.js"></script>
         
         
         <script src="{{STATIC_URL}}js/bootstrap.js"></script>
         
-        <title>{% block title %}ló ..::{% endblock%}</title
+        <title>{% block title %}{% endblock%}</title
         
     </head>
     
@@ -37,49 +41,62 @@
        
         <div class="navbar-collapse collapse" >
             <ul class="nav navbar-nav">
-                <li>
+             <!--   <li>
                 <a href="/index">Home</a>
-                </li>
+                </li> -->
+                
                 <li>
-                <a href="categories.html">Category</a>
+                <a href="/categ">Category</a>
                 </li>
+                
                 <li>
-                <a href="archive.html">Archives</a>
+                <a href="/archives">Archives</a>
                 </li>
             </ul>
            
             
             <ul class="nav navbar-nav navbar-right">
                 
+                     <li>
+                        <a href="signin.html">
+                            <span class="fa fa-plus-circle"></span>
+                            Sign in
+                        </a>
+                    </li>
+                     
+                    <li>
+                        <a href="signin.html">
+                            <span class="fa fa-plus-circle"></span>
+                            Register
+                        </a>
+                    </li>
+                    
                     <li>
                         <a href="contact.html">
                             <span class="fa fa-sign-in"></span>
                            Contact
                         </a>
                     </li>
-                    <li>
-                        <a href="about.html">
+                    
+                     <li>
+                        <a href="/about">
                             <span class="fa fa-plus-circle"></span>
                             About
                         </a>
-                    </li>
-                <li>
-                        <a href="signin.html">
-                            <span class="fa fa-plus-circle"></span>
-                            Sign in
-                        </a>
-                    </li>
+                    </li> 
+                
             </ul>
-
-         
-        <form class="navbar-form pull-right" role="search">
+        
+       <!--
+        <form action="/search" method="get" class="navbar-form  search-perso" role="search"  >
+            {% csrf_token %}
         <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+            <input type="text" class="form-control" placeholder="Search"  id="srch-term" name="q" >
             <div class="input-group-btn">
-                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                <button class="btn btn-default" type="submit" value="Search"><i class="glyphicon glyphicon-search"></i></button>
             </div>
         </div>
-        </form>
+            </form> -->
     
             
                      
@@ -101,27 +118,57 @@
             <div class="footer ">
                 <div class="container">
                     <div class="row">
-                     <div class="col-sm-4">
-                        </div>
-                        <div class="col-sm-3">
-                <p>
-                    <a href="/index">
+                  
+                        <div class="col-sm-12">
+                        
+                        <div class="col-sm-4">
+                            
+                <ul class="nav navbar-nav">
+                <li>
+                <a href="/about">
                         <strong>
                             <span class="fa fa-fw fa-home"></span>
-                            Home Page
+                            About this site
                         </strong>
                     </a>
-                </p>
+                </li>
+                <li>
+               
                 
-                <p>Lohinlo..::</p>
-                <p class="text-muted">
+                </li>
+                
+            </ul>
+                
+                        </div>
+                        <div class="col-sm-4"></div>
+                        <div class="col-sm-4"></div>
+                        <p class="text-muted">
                     Copyright &copy; 2014 -
                     <a href="/index.html">Maur</a>
                 </p>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="col-sm-4"></div>
+                        <div class="col-sm-4">
+                            
+                <ul class="nav navbar-nav">
+                <li>
+                <a href="/index">Home</a>
+                </li>
+                <li>
+                <a href="categories.html">Category</a>
+                </li>
+                <li>
+                <a href="archive.html">Archives</a>
+                </li>
+            </ul>
+                        </div>
+                        
+                    </div>
+                    </div>
+                    
+                </div>
             </div>
-            </div>
-        </div>
-        </div>
             {% endblock %}
         
         

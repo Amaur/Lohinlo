@@ -1,11 +1,13 @@
-{% extends "inicio/base.html"%}
+{% extends "inicio/base.html" %}
+
+{% block title %}ló..::{% endblock %}
 
 {% block content%}
     
-      <div class="container content">
+    <div class="container content">
             <div class="row">
                 <div class="col-sm-12">
-                <div class="col-sm-8"> <!-- debut Article nouveau -->
+                <div class="col-sm-9"> <!-- debut Article nouveau -->
                     <div class="jumbotron">
         <h1 class="truncate">
             PSA: 5mn gmail account passwords apparently leaked <br>
@@ -33,154 +35,38 @@
         </p>
     
     </div>
+                </div>
                     <!-- fim Article nouveau -->
-                    
-                    
-                    
-           
-                    
-                    
-                    
+        <div class="col-sm-3">
+            <div class=" panel panel-default">
+            <div class=" panel-heading">
+                <h3 class="panel-title ">Search</h3>
+            </div>
+            
+            <div class="list-group">
+                <form action="/search" method="get" class="navbar-form  search-perso" role="search"  >
+            {% csrf_token %}
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search"  id="srch-term" name="q" >
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit" value="Search"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
+        </div>
+                </form>
         
-                      
+            </div>
+        </div>
+            
+        </div>            
+                                
         </div>   
                       
-                     <br><br>
-     <!--       <div class="col-sm-4">    
-            <div class="panel panel-default">
-    <div class="panel-heading">
-        <h3 class="panel-title">Categories</h3>
-    </div>
-    <div class="list-group">
-        
-            <a href="/categories/3/announcements/" class="list-group-item">
-                <span class="badge">393</span>
-                <span class="fa fa-folder-open"></span>
-                Announcements
-            </a>
-        
-            <a href="/categories/6/editorial/" class="list-group-item">
-                <span class="badge">163</span>
-                <span class="fa fa-folder-open"></span>
-                Editorial
-            </a>
-        
-            <a href="/categories/9/interviews/" class="list-group-item">
-                <span class="badge">2</span>
-                <span class="fa fa-folder-open"></span>
-                Interviews
-            </a>
-        
-            <a href="/categories/4/reviews/" class="list-group-item">
-                <span class="badge">52</span>
-                <span class="fa fa-folder-open"></span>
-                Reviews
-            </a>
-        
-            <a href="/categories/8/tips/" class="list-group-item">
-                <span class="badge">78</span>
-                <span class="fa fa-folder-open"></span>
-                Tips
-            </a>
-        
-            <a href="/categories/7/tutorials/" class="list-group-item">
-                <span class="badge">22</span>
-                <span class="fa fa-folder-open"></span>
-                Tutorials
-            </a>
-        
-            <a href="/categories/2/tutorials-programming/" class="list-group-item">
-                <span class="badge">22</span>
-                <span class="fa fa-folder-open"></span>
-                Tutorials :: Programming
-            </a>
-        
-            <a href="/categories/5/tutorials-terminal/" class="list-group-item">
-                <span class="badge">20</span>
-                <span class="fa fa-folder-open"></span>
-                Tutorials :: Terminal
-            </a>
-        
-    </div>
-</div>
-</div> -->
-                
-                <div class="col-sm-4">
-                    <div class="panel panel-default">
-    <div class="panel-heading">
-        <h3 class="panel-title">
-            <a href="https://twitter.com/2buntunews" class="pull-right" title="Follow on Twitter"><i class="fa fa-twitter"></i></a>
-            Latest News
-        </h3>
-    </div>
-    <div class="list-group">
-        
-            <a href="https://lists.ubuntu.com/archives/ubuntu-announce/2014-September/000190.html" class="list-group-item">
-                <span class="badge">Sep 25</span>
-                <h4 class="list-group-item-heading">Final Beta of Utopic Unicorn Released.</h4>
-                <p class="list-group-item-text">
-                    The last of the 14.10 beta releases has just been made available for download.
-                </p>
-            </a>
-        
-            <a href="https://wiki.documentfoundation.org/ReleaseNotes/4.4#OpenGL_Transitions" class="list-group-item">
-                <span class="badge">Aug 29</span>
-                <h4 class="list-group-item-heading">LibreOffice 4.4 will bring 3D Transitions to Windows.</h4>
-                <p class="list-group-item-text">
-                    Thanks to VCL&#39;s new OpenGL framework.
-                </p>
-            </a>
-        
-            <a href="https://lists.ubuntu.com/archives/ubuntu-devel-announce/2014-August/001109.html" class="list-group-item">
-                <span class="badge">Aug 28</span>
-                <h4 class="list-group-item-heading">Ubuntu 14.10 (Utopic Unicorn) beta-1 released!</h4>
-                <p class="list-group-item-text">
-                    The first beta of the Utopic Unicorn (to become 14.10) has now been released!
-                </p>
-            </a>
-        
+                   
            
-        
-        
-    </div>
-                        
-     <hr>
-    <div class="panel panel-default"> <!-- Social network -->
-    <div class="panel-heading">
-        <h3 class="panel-title">
-            <a href="https://twitter.com/2buntunews" class="pull-right" title="Follow on Twitter"><i class="fa fa-twitter"></i></a>
-            Latest News
-        </h3>
-    </div>
-    <div class="list-group">
-        
-            <a href="https://lists.ubuntu.com/archives/ubuntu-announce/2014-September/000190.html" class="list-group-item">
-                <span class="badge">Sep 25</span>
-                <h4 class="list-group-item-heading">Final Beta of Utopic Unicorn Released.</h4>
-                <p class="list-group-item-text">
-                    The last of the 14.10 beta releases has just been made available for download.
-                </p>
-            </a>
-        
-            <a href="https://wiki.documentfoundation.org/ReleaseNotes/4.4#OpenGL_Transitions" class="list-group-item">
-                <span class="badge">Aug 29</span>
-                <h4 class="list-group-item-heading">LibreOffice 4.4 will bring 3D Transitions to Windows.</h4>
-                <p class="list-group-item-text">
-                    Thanks to VCL&#39;s new OpenGL framework.
-                </p>
-            </a>           
-    </div>                
-                        
-
-</div>
-
-              
-                
-          
-        </div>
-           
-    </div>
-    </div>
+   
+    
+    
+    
     <hr>            
            <div class="col-sm-12">
                 <hr>  
@@ -232,6 +118,6 @@
         </p>
                 
         </div>
-        </div>
+    </div>    
     
-{% endblock %}
+    {% endblock %}

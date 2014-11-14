@@ -1,0 +1,92 @@
+{% extends 'inicio/base.html'%}
+{%block title%}Categories{%endblock%}
+{%block css%}{{block.super}}
+    <link rel="stylesheet" href="{{STATIC_URL}}css/archive.css">
+    {%endblock%}
+
+     {%block content %}   
+        
+       <div class="container content">
+            <div class="row">
+                <div class="col-sm-4 pull-right">
+                    <form action="/search" method="get" class="navbar-form  search-perso" role="search"  >
+            {% csrf_token %}
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search"  id="srch-term" name="q" >
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit" value="Search"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
+        </div>
+                </form>
+                    
+                </div>
+                
+                
+                <div class="col-sm-12">
+                <h2>Categories</h2>
+                <hr>
+                
+
+ <div class="col-sm-3 list-art">
+                    <h4 class="truncate">
+    <a href="/articles/1445/what-are-converged-apps/" title="What are converged apps?">Poeme &amp; Autres</a><br>
+   
+    </h4>
+<p>
+    Converge: (of several people or things) come together from different directions so as eventually to meet. Source: Google. With the arrival of Ubuntu Touch and the Ubuntu SDK, there has been a lot of talk about so-called "Converged Apps". But just what are they? One App - Many Faces A "Converged App" is simply an application that can run on ...
+</p>
+<p>
+    <a href="/articles/1506/psa-5mn-gmail-account-passwords-apparently-leaked/" class="btn btn-primary">Read More</a>
+        </p>
+</div>
+
+ <div class="col-sm-3 list-art">
+                    <h4 class="truncate">
+    <a href="/articles/1445/what-are-converged-apps/" title="What are converged apps?">Souvenir, mon beau pays</a><br>
+    
+</h4>
+<p>
+    Converge: (of several people or things) come together from different directions so as eventually to meet. Source: Google. With the arrival of Ubuntu Touch and the Ubuntu SDK, there has been a lot of talk about so-called "Converged Apps". But just what are they? One App - Many Faces A "Converged App" is simply an application that can run on ...
+</p>
+<p>
+  <a href="/articles/1506/psa-5mn-gmail-account-passwords-apparently-leaked/" class="btn btn-primary">Read More</a>
+        </p>
+</div>
+                    
+ <div class="col-sm-3 list-art">
+                    <h4 class="truncate">
+    <a href="/articles/1445/what-are-converged-apps/" title="What are converged apps?">Cronique d'un Exile</a><br>
+    
+</h4>
+<p>
+    Converge: (of several people or things) come together from different directions so as eventually to meet. Source: Google. With the arrival of Ubuntu Touch and the Ubuntu SDK, there has been a lot of talk about so-called "Converged Apps". But just what are they? One App - Many Faces A "Converged App" is simply an application that can run on ...
+</p>
+<p>
+    <a href="/articles/1506/psa-5mn-gmail-account-passwords-apparently-leaked/" class="btn btn-primary">Read</a>
+        </p>
+</div>
+                    
+<div class="col-sm-3 list-art">
+                    <h4 class="truncate">
+    <a href="/articles/1445/what-are-converged-apps/" title="What are converged apps?">Erreur &amp; Certitude </a><br>
+    
+</h4>
+<p>
+    Converge: (of several people or things) come together from different directions so as eventually to meet. Source: Google. With the arrival of Ubuntu Touch and the Ubuntu SDK, there has been a lot of talk about so-called "Converged Apps". But just what are they? One App - Many Faces A "Converged App" is simply an application that can run on ...
+</p>
+<p>
+    <a href="/articles/1506/psa-5mn-gmail-account-passwords-apparently-leaked/" class="btn btn-primary">Read</a>
+        </p>
+</div>
+<br>
+
+                    
+
+         
+    </div>    
+    </div>
+    </div>
+     
+     {% endblock%}   
+        
+ 
