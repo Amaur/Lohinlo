@@ -71,7 +71,7 @@
                         </a>
                     </li>
                     
-                    <li>
+               <!--     <li>
                         <a href="contact.html">
                             <span class="fa fa-sign-in"></span>
                            Contact
@@ -83,11 +83,12 @@
                             <span class="fa fa-plus-circle"></span>
                             About
                         </a>
-                    </li> 
+                    </li> -->
                 
             </ul>
         
-       <!--
+            
+      <div class="col-sm-5 col-md-5 pull-right">
         <form action="/search" method="get" class="navbar-form  search-perso" role="search"  >
             {% csrf_token %}
         <div class="input-group">
@@ -96,8 +97,8 @@
                 <button class="btn btn-default" type="submit" value="Search"><i class="glyphicon glyphicon-search"></i></button>
             </div>
         </div>
-            </form> -->
-    
+            </form> 
+    </div>
             
                      
             
@@ -114,61 +115,175 @@
         
         
         {% block footer%}
+        
+        <!--
+  <div class="footer">   
+      <div class="container">
+          <div class="row">
+            <!-- page:starts
+    <section class="footer container-fluid section">
+        <div class="row-fluid">
+            <section class="container">
+                <div class="row">
+                    <article class="contactus span12 text-center">
+                        <h1>Social Media..|</h1>
+                    </article>
+                 </div>
+
+
+
+                 <div class="row foot-soc foot-soc">
+                    <article class="span12 text-center">
+                        <nav class="social-links">
+                            <a class="facebook" href="http://facebook.com/" target="_blank">
+                                <img alt="facebook" title="facebook" src="{{STATIC_URL}}img/social/cool/facebook.png" >
+                            </a>
+                            <a class="twitter" href="http://twitter.com/" target="_blank">
+                                <img alt="twitter" title="twitter" src="{{STATIC_URL}}img/social/cool/twitter.png" >
+                            </a>
+                            <a class="google" href="http://google.com/" target="_blank">
+                                <img alt="google" title="google" src="{{STATIC_URL}}img/social/cool/google.png" >
+                            </a>
+                            
+                            
+                        </nav>
+                    </article>
+                 </div>
+
+            </section>
+        </div>
+    </section>
+
+
+      <section class="footer container-fluid section">
+        <div class="row-fluid">
+            <section class="container">
+                <div class="row">
+                    <article class="contactus span12 text-center">
+                        <h2>Info..::|</h2>
+                    </article>
+                 </div>
+
+
+
+                 <div class="row foot-soc">
+                    <article class="span12 text-center">
+                        <nav class="social-links">
+                            <a  href="/contact" >
+                                <img alt="Contact" title="Contact" src="{{STATIC_URL}}img/icons/mail.png" >
+                            </a>
+                            <a  href="/about">
+                                <img alt="About" title="About" src="{{STATIC_URL}}img/icons/info.png" >
+                            </a>
+                            
+                            
+                            
+                        </nav>
+                         
+                    </article>
+                 </div>
+
+            </section>
+        </div>
+    </section>
+      
+
+    <section class="footer-down container-fluid section">
+        <div class="row-fluid">
+
+            <section class="container">
+                 <div class="row">
+                    <article class="span12 ">
+                        <div class="copyright text-center">        
+                            <h3><small>Copyright &copy; 2014 Wahinlo.<!--<br/>L from <a href="http://www.designova.net">Designova</a>   </small></h3>        
+                        </div>
+                    </article>
+                 </div>
+
+            </section>
+        </div>
+    </section>
+    <!--page:ends
+     
+      <div class="col-sm-12">
+      <div class="col-sm-6 col-sd-6">
+        <div class="copyright text-center">        
+                            <h3><small>Copyright &copy; 2014 Wahinlo.<br/>L from <a href="http://www.designova.net">Designova</a>   </small></h3>        
+                        </div>
+      </div>
+          </div>
+      <div class="col-sm-12" style="background:red;">
+          <div class="col-sm-4 col-sd-4"></div>
+      <div class="col-sm-4 col-sd-4">
+        <div class="copyright text-center">        
+                            <h3><small>Copyright &copy; 2014 Wahinlo.<br/>L from <a href="http://www.designova.net">Designova</a>   </small></h3>        
+                        </div>
+      </div>
+          <div class="col-sm-4 col-sd-4"></div>
+          </div>
+      
+          </div>
+          </div>
+        </div> -->
+        
+        <div class="footer">
             
-            <div class="footer ">
-                <div class="container">
-                    <div class="row">
-                  
-                        <div class="col-sm-12">
-                        
-                        <div class="col-sm-4">
+            <div class="col-sm-12" style="background:rgb(158, 158, 159)">
+          <div class="col-sm-5 col-sd-5"></div>
+      <div class="col-sm-3 col-sd-3">
+        <nav class="social-links">
+                            <a class="facebook" href="http://facebook.com/" target="_blank">
+                                <img alt="facebook" title="facebook" src="{{STATIC_URL}}img/social/cool/facebook.png" >
+                            </a>
+                            <a class="twitter" href="http://twitter.com/" target="_blank">
+                                <img alt="twitter" title="twitter" src="{{STATIC_URL}}img/social/cool/twitter.png" >
+                            </a>
+                            <a class="google" href="http://google.com/" target="_blank">
+                                <img alt="google" title="google" src="{{STATIC_URL}}img/social/cool/google.png" >
+                            </a>
                             
-                <ul class="nav navbar-nav">
-                <li>
-                <a href="/about">
-                        <strong>
-                            <span class="fa fa-fw fa-home"></span>
-                            About this site
-                        </strong>
-                    </a>
-                </li>
-                <li>
-               
-                
-                </li>
-                
-            </ul>
-                
-                        </div>
-                        <div class="col-sm-4"></div>
-                        <div class="col-sm-4"></div>
-                        <p class="text-muted">
-                    Copyright &copy; 2014 -
-                    <a href="/index.html">Maur</a>
-                </p>
-                    </div>
-                    <div class="col-sm-12">
-                        <div class="col-sm-4"></div>
-                        <div class="col-sm-4">
                             
-                <ul class="nav navbar-nav">
-                <li>
-                <a href="/index">Home</a>
-                </li>
-                <li>
-                <a href="categories.html">Category</a>
-                </li>
-                <li>
-                <a href="archive.html">Archives</a>
-                </li>
-            </ul>
+                        </nav>
+      </div>
+          <div class="col-sm-4 col-sd-4"></div>
+          </div>
+            
+        </div>
+        <div class="footer">
+            
+             <div class="col-sm-12" style="background: rgb(158, 158, 159);">
+          <div class="col-sm-5 col-sd-5"></div>
+      <div class="col-sm-2 col-sd-2">
+          
+      <nav class="social-links">
+                            <a  href="/contact" >
+                                <img alt="Contact" title="Contact" src="{{STATIC_URL}}img/icons/mail.png" >
+                            </a>
+                            <a  href="/about">
+                                <img alt="About" title="About" src="{{STATIC_URL}}img/icons/info.png" >
+                            </a>
+                            
+                            
+                            
+                        </nav>
+      </div>
+          <div class="col-sm-5 col-sd-5"></div>
+          </div>
+        </div>
+        <div class="footer">
+        
+                 <div class="col-sm-12" style="background: rgb(158, 158, 159);">
+          <div class="col-sm-4 col-sd-4"></div>
+      <div class="col-sm-4 col-sd-4">
+        <div class="copyright text-center">        
+                            <h3 ><small style="color:black;">Copyright &copy; 2014 Wahinlo.</small></h3>        
                         </div>
-                        
-                    </div>
-                    </div>
-                    
-                </div>
-            </div>
+      </div>
+          <div class="col-sm-4 col-sd-4"></div>
+          </div>
+        
+        </div>
+        
             {% endblock %}
         
         
