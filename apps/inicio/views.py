@@ -14,6 +14,11 @@ def Cat(request):
 def Archive(request):
     return render(request, 'inicio/archive.html')
 
+def Login(request):
+    return render(request, 'inicio/signin.html')
+def Register(request):
+    return render(request, 'inicio/register.html')
+
 
 def Search(request):
     if 'q' in request.GET and request.GET['q']:

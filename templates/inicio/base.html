@@ -14,6 +14,12 @@
         
         <script src="{{STATIC_URL}}js/bootstrap.js"></script>
         
+        {% block js %}
+        
+            {% endblock %}
+        
+        
+        
         <title>{% block title %}{% endblock%}</title
         
     </head>
@@ -54,32 +60,32 @@
            
             
             <ul class="nav navbar-nav navbar-right">
-                
+                {% block userspace%}
                      <li>
-                        <a href="signin.html">
+                        <a href="/login">
                             <span class="fa fa-plus-circle"></span>
                             Sign in
                         </a>
                     </li>
                      
                     <li>
-                        <a href="signin.html">
+                        <a href="/register">
                             <span class="fa fa-plus-circle"></span>
                             Register
                         </a>
                     </li>
-                    
+                    {% endblock %}
               
             </ul>
         
             
       <div class="col-sm-5 col-md-5 pull-right">
         <form action="/search" method="get" class="navbar-form  search-perso" role="search"  >
-            {% csrf_token %}
+            
         <div class="input-group">
             <input type="text" class="form-control" placeholder="Search"  id="srch-term" name="q" >
             <div class="input-group-btn">
-                <button class="btn btn-default" type="submit" value="Search"><i class="glyphicon glyphicon-search"></i></button>
+                <button class="btn btn-default" id="search-submit" type="submit" value="Search"><i class="glyphicon glyphicon-search"></i></button>
             </div>
         </div>
             </form> 
@@ -134,10 +140,12 @@
           
       <nav class="social-links">
                             <a  href="/contact" >
-                                <img alt="Contact" title="Contact" src="{{STATIC_URL}}img/icons/mail.png" >
+                                
+                             <img alt="Contact" title="Contact" src="{{STATIC_URL}}img/icons/Messaging-Message-Group-icon.png" style="color:blue;"/>
                             </a>
                             <a  href="/about">
-                                <img alt="About" title="About" src="{{STATIC_URL}}img/icons/info.png" >
+                                
+                                <img alt="About" title="About" src="{{STATIC_URL}}img/icons/info.png" > 
                             </a>
                             
                             

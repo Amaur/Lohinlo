@@ -1,5 +1,5 @@
 from django.conf.urls import patterns, include, url
-from .views import Index,Search,About , Cat, Archive
+from .views import Index,Search,About , Cat, Archive,Login,Register
 
 from django.contrib import admin
 admin.autodiscover()
@@ -13,5 +13,7 @@ urlpatterns = patterns('',
     url(r'^about', About),
     url(r'^categ', Cat),
     url(r'^archives', Archive),
+    url(r'^login', Login),
+    url(r'^register', Register),
 
 )

@@ -1,18 +1,28 @@
 {% extends "inicio/base.html"%}
 
+{%block js%}{{block.super}}
+   <script src="{{STATIC_URL}}js/load.js"></script>
+    {%endblock%}
+
+
+
 {% block content%}
+    
+    <div class="loader">
+        <p style="text-align: center; margin-top: 400px;color: "blue"; ">Searching..::</p>
+    </div>
     <div class="container content">
             <div class="row">
                 <div class="col-sm-12">
                 <div class="col-sm-10"> <!-- debut Article nouveau -->
                     <div class="jumbotron">
-    <h1>5 million Gmail passwords have been reported to be leaked onto a Russian BitCoin forum. Here's a website</h1>
+    <h3>Result for {{mes}}</h3>
     <br>
-       
+                    </div>   
     
 <a href="#">{{mes}}</a>
 
-                    </div>
+                    
                 </div>
                 </div>
             </div>
