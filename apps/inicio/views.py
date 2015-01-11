@@ -9,7 +9,7 @@ def About(request):
     return render(request, 'inicio/about.html')
 
 def Cat(request):
-    return render(request, 'inicio/cat.html')
+    return render(request, 'category/cat.html')
 
 def Archive(request):
     return render(request, 'inicio/archive.html')
